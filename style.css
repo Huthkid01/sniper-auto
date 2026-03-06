@@ -265,7 +265,7 @@ img {
     transition: var(--transition);
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
     color: var(--secondary-color);
-    border: 1px solid #e2e8f0; /* Light border */
+    border: 1px solid var(--primary-color); /* Yellow border */
 }
 
 .vehicle-card:hover {
@@ -623,8 +623,8 @@ img {
 .btn-submit-booking {
     width: 100%;
     padding: 18px;
-    background-color: var(--secondary-color); /* Dark Slate */
-    color: var(--primary-color); /* Gold text */
+    background-color: var(--primary-color); /* Yellow background */
+    color: var(--secondary-color); /* Dark text */
     font-size: 1.1rem;
     font-weight: 800;
     border: none;
@@ -635,9 +635,9 @@ img {
 }
 
 .btn-submit-booking:hover {
-    background-color: #1e293b; /* Slightly lighter dark */
+    background-color: #d97706; /* Darker yellow on hover */
     transform: translateY(-2px);
-    box-shadow: 0 10px 20px rgba(15, 23, 42, 0.4);
+    box-shadow: 0 10px 20px rgba(236, 168, 36, 0.4);
 }
 
 .form-footer {
