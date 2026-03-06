@@ -466,6 +466,7 @@ img {
 }
 
 .btn-security-cta {
+    display: inline-block; /* Fix for wrapping issues */
     background-color: var(--primary-color);
     color: var(--secondary-color);
     padding: 15px 40px;
@@ -474,6 +475,7 @@ img {
     border-radius: 8px;
     border: none;
     text-transform: capitalize;
+    margin-top: 10px;
 }
 
 .btn-security-cta:hover {
@@ -924,5 +926,18 @@ footer {
     .notification-container.show {
         right: auto; /* Reset right */
         left: 5%;
+    }
+
+    .security-cta-box {
+        padding: 30px 20px;
+    }
+
+    .security-cta-box h3 {
+        font-size: 1.5rem;
+    }
+
+    .btn-security-cta {
+        width: 100%;
+        box-sizing: border-box;
     }
 }
