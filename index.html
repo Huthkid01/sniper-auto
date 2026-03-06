@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sniper Autos - Premium Car Rental & VIP Security</title>
+    <meta name="description" content="Experience luxury with Sniper Autos. Premium SUV rentals featuring Mercedes G-Wagon, Lexus GX, Range Rover, and VIP security services.">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.sniperautos.com/">
+    <meta property="og:title" content="Sniper Autos - Premium Car Rental & VIP Security">
+    <meta property="og:description" content="Experience luxury with Sniper Autos. Premium SUV rentals featuring Mercedes G-Wagon, Lexus GX, Range Rover, and VIP security services.">
+    <meta property="og:image" content="images/sniperautos.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.sniperautos.com/">
+    <meta property="twitter:title" content="Sniper Autos - Premium Car Rental & VIP Security">
+    <meta property="twitter:description" content="Experience luxury with Sniper Autos. Premium SUV rentals featuring Mercedes G-Wagon, Lexus GX, Range Rover, and VIP security services.">
+    <meta property="twitter:image" content="images/sniperautos.png">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="images/sniperautos.png">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Flatpickr for Date Picker -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <!-- Removed material_orange theme to prevent orange override -->
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero sula-style">
+        <div class="hero-overlay"></div>
+        <div class="hero-content container">
+            <!-- Logo Box -->
+            <div class="hero-logo-box">
+                <img src="images/sniperautos.png" alt="Sniper Autos Logo" class="logo-img">
+            </div>
+
+            <!-- Main Headline -->
+            <h1 class="hero-title">
+                <span class="text-primary">Experience Luxury</span><br>
+                <span class="text-white">In Every Journey</span>
+            </h1>
+            
+            <!-- Subtitle -->
+            <p class="hero-subtitle">
+                Premium SUV rentals and VIP security services for discerning travelers
+            </p>
+
+            <!-- Buttons Grid -->
+            <div class="hero-buttons">
+                <a href="#booking" class="btn btn-hero-gold">
+                    Book Now <i class="fas fa-arrow-right"></i>
+                </a>
+                <a href="#fleet" class="btn btn-hero-outline">
+                    View Fleet
+                </a>
+            </div>
+
+            <!-- Bottom Features -->
+            <ul class="hero-features">
+                <li><span class="dot"></span> 24/7 Availability</li>
+                <li><span class="dot"></span> Professional Drivers</li>
+                <li><span class="dot"></span> VIP Security</li>
+            </ul>
+
+            <!-- Scroll Indicator -->
+            <div class="scroll-indicator">
+                <div class="mouse"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fleet Section -->
+    <section id="fleet" class="section-padding">
+        <div class="container">
+            <h2 class="section-title">Our <span class="text-gold">Premium Fleet</span></h2>
+            <p class="section-subtitle">Choose from our selection of meticulously maintained luxury SUVs, each offering the perfect blend of comfort, performance, and prestige.</p>
+            
+            <div class="fleet-grid">
+                <!-- Coaster Bus -->
+                <div class="vehicle-card">
+                    <div class="vehicle-image">
+                        <span class="price-tag">from ₦300,000</span>
+                        <img src="images/vehicles/coaster-bus.jpg" alt="Coaster Bus">
+                    </div>
+                    <div class="vehicle-info">
+                        <h3>Coaster Bus</h3>
+                        <p>Comfortable group transport with premium amenities</p>
+                        <ul class="vehicle-features">
+                            <li><i class="fas fa-user-friends"></i> 30 Passengers</li>
+                            <li><i class="fas fa-cog"></i> Automatic</li>
+                            <li><i class="fas fa-gas-pump"></i> Diesel</li>
+                        </ul>
+                        <button class="btn btn-sm book-car-btn" data-vehicle="coaster">Reserve Now</button>
+                    </div>
+                </div>
+
+                <!-- Escalade ESV 600 -->
+                <div class="vehicle-card">
+                    <div class="vehicle-image">
+                        <span class="price-tag">from ₦400,000</span>
+                        <img src="images/vehicles/escalade-esv.jpg" alt="Escalade ESV 600">
+                    </div>
+                    <div class="vehicle-info">
+                        <h3>Escalade ESV 600</h3>
+                        <p>American luxury at its finest with extended space</p>
+                        <ul class="vehicle-features">
+                            <li><i class="fas fa-user-friends"></i> 7 Passengers</li>
+                            <li><i class="fas fa-cog"></i> Automatic</li>
+                            <li><i class="fas fa-star"></i> Premium</li>
+                        </ul>
+                        <button class="btn btn-sm book-car-btn" data-vehicle="escalade">Reserve Now</button>
+                    </div>
+                </div>
+
+                <!-- G-Wagon (2016 facelifted to 2020) -->
+                <div class="vehicle-card">
+                    <div class="vehicle-image">
+                        <span class="price-tag">from ₦300,000</span>
+                        <img src="images/vehicles/g-wagon.jpg" alt="G-Wagon">
+                    </div>
+                    <div class="vehicle-info">
+                        <h3>G-Wagon (2016-2020)</h3>
+                        <p>Iconic luxury SUV combining power with sophistication</p>
+                        <ul class="vehicle-features">
+                            <li><i class="fas fa-user-friends"></i> 5 Passengers</li>
+                            <li><i class="fas fa-cog"></i> Automatic</li>
+                            <li><i class="fas fa-star"></i> Premium</li>
+                        </ul>
+                        <button class="btn btn-sm book-car-btn" data-vehicle="g-wagon-old">Reserve Now</button>
+                    </div>
+                </div>
+
+                <!-- G63 AMG (2021) -->
+                <div class="vehicle-card">
+                    <div class="vehicle-image">
+                        <span class="price-tag">from ₦500,000</span>
+                        <img src="images/vehicles/g63-amg.jpg" alt="G63 AMG">
+                    </div>
+                    <div class="vehicle-info">
+                        <h3>G63 AMG (2021)</h3>
+                        <p>High-performance luxury SUV with commanding presence</p>
+                        <ul class="vehicle-features">
+                            <li><i class="fas fa-user-friends"></i> 5 Passengers</li>
+                            <li><i class="fas fa-cog"></i> Automatic</li>
+                            <li><i class="fas fa-star"></i> Premium</li>
+                        </ul>
+                        <button class="btn btn-sm book-car-btn" data-vehicle="g63">Reserve Now</button>
+                    </div>
+                </div>
+
+                <!-- Hilux (2015) -->
+                <div class="vehicle-card">
+                    <div class="vehicle-image">
+                        <span class="price-tag">from ₦180,000</span>
+                        <img src="images/vehicles/hilux-2015.jpg" alt="Hilux 2015">
+                    </div>
+                    <div class="vehicle-info">
+                        <h3>Hilux (2015)</h3>
+                        <p>Escort vehicle with 3 security personnel included</p>
+                        <ul class="vehicle-features">
+                            <li><i class="fas fa-user-friends"></i> 5 Passengers</li>
+                            <li><i class="fas fa-cog"></i> Automatic</li>
+                            <li><i class="fas fa-star"></i> Premium</li>
+                        </ul>
+                        <button class="btn btn-sm book-car-btn" data-vehicle="hilux-2015">Reserve Now</button>
+                    </div>
+                </div>
+
+                <!-- Hilux (2021) -->
+                <div class="vehicle-card">
+                    <div class="vehicle-image">
+                        <span class="price-tag">from ₦130,000</span>
+                        <img src="images/vehicles/hilux-2021.jpg" alt="Hilux 2021">
+                    </div>
+                    <div class="vehicle-info">
+                        <h3>Hilux (2021)</h3>
+                        <p>Modern luxury pickup with advanced features</p>
+                        <ul class="vehicle-features">
+                            <li><i class="fas fa-user-friends"></i> 5 Passengers</li>
+                            <li><i class="fas fa-cog"></i> Automatic</li>
+                            <li><i class="fas fa-star"></i> Premium</li>
+                        </ul>
+                        <button class="btn btn-sm book-car-btn" data-vehicle="hilux-2021">Reserve Now</button>
+                    </div>
+                </div>
+
+                <!-- Lexus GX460 -->
+                <div class="vehicle-card">
+                    <div class="vehicle-image">
+                        <span class="price-tag">from ₦120,000</span>
+                        <img src="images/vehicles/lexus-gx460.jpg" alt="Lexus GX460">
+                    </div>
+                    <div class="vehicle-info">
+                        <h3>Lexus GX460</h3>
+                        <p>Japanese luxury meets uncompromising capability</p>
+                        <ul class="vehicle-features">
+                            <li><i class="fas fa-user-friends"></i> 7 Passengers</li>
+                            <li><i class="fas fa-cog"></i> Automatic</li>
+                            <li><i class="fas fa-star"></i> Premium</li>
+                        </ul>
+                        <button class="btn btn-sm book-car-btn" data-vehicle="gx460">Reserve Now</button>
+                    </div>
+                </div>
+
+                <!-- Lexus LX570 -->
+                <div class="vehicle-card">
+                    <div class="vehicle-image">
+                        <span class="price-tag">from ₦250,000</span>
+                        <img src="images/vehicles/lexus-lx570.jpg" alt="Lexus LX570">
+                    </div>
+                    <div class="vehicle-info">
+                        <h3>Lexus LX 570</h3>
+                        <p>Ultimate luxury SUV with exceptional performance</p>
+                        <ul class="vehicle-features">
+                            <li><i class="fas fa-user-friends"></i> 8 Passengers</li>
+                            <li><i class="fas fa-cog"></i> Automatic</li>
+                            <li><i class="fas fa-star"></i> Premium</li>
+                        </ul>
+                        <button class="btn btn-sm book-car-btn" data-vehicle="lx570">Reserve Now</button>
+                    </div>
+                </div>
+
+                <!-- Range Rover Vogue -->
+                <div class="vehicle-card">
+                    <div class="vehicle-image">
+                        <span class="price-tag">from ₦350,000</span>
+                        <img src="images/vehicles/range-rover.jpg" alt="Range Rover Vogue">
+                    </div>
+                    <div class="vehicle-info">
+                        <h3>Range Rover Vogue</h3>
+                        <p>British elegance with extended luxury and space</p>
+                        <ul class="vehicle-features">
+                            <li><i class="fas fa-user-friends"></i> 5 Passengers</li>
+                            <li><i class="fas fa-cog"></i> Automatic</li>
+                            <li><i class="fas fa-star"></i> Premium</li>
+                        </ul>
+                        <button class="btn btn-sm book-car-btn" data-vehicle="range-rover">Reserve Now</button>
+                    </div>
+                </div>
+
+                <!-- Sprinter Bus -->
+                <div class="vehicle-card">
+                    <div class="vehicle-image">
+                        <span class="price-tag">from ₦250,000</span>
+                        <img src="images/vehicles/sprinter-bus.jpg" alt="Sprinter Bus">
+                    </div>
+                    <div class="vehicle-info">
+                        <h3>Sprinter Bus</h3>
+                        <p>Luxury passenger transport for group travel</p>
+                        <ul class="vehicle-features">
+                            <li><i class="fas fa-user-friends"></i> 16 Passengers</li>
+                            <li><i class="fas fa-cog"></i> Automatic</li>
+                            <li><i class="fas fa-gas-pump"></i> Diesel</li>
+                        </ul>
+                        <button class="btn btn-sm book-car-btn" data-vehicle="sprinter">Reserve Now</button>
+                    </div>
+                </div>
+
+                <!-- Toyota Prado -->
+                <div class="vehicle-card">
+                    <div class="vehicle-image">
+                        <span class="price-tag">from ₦120,000</span>
+                        <img src="images/vehicles/prado.jpg" alt="Toyota Prado">
+                    </div>
+                    <div class="vehicle-info">
+                        <h3>Toyota Land Cruiser Prado</h3>
+                        <p>Legendary reliability with premium comfort and style</p>
+                        <ul class="vehicle-features">
+                            <li><i class="fas fa-user-friends"></i> 7 Passengers</li>
+                            <li><i class="fas fa-cog"></i> Automatic</li>
+                            <li><i class="fas fa-star"></i> Premium</li>
+                        </ul>
+                        <button class="btn btn-sm book-car-btn" data-vehicle="prado">Reserve Now</button>
+                    </div>
+                </div>
+
+                <!-- Viano Van -->
+                <div class="vehicle-card">
+                    <div class="vehicle-image">
+                        <span class="price-tag">from ₦300,000</span>
+                        <img src="images/vehicles/viano-van.jpg" alt="Viano Van">
+                    </div>
+                    <div class="vehicle-info">
+                        <h3>Viano Van (2020)</h3>
+                        <p>Premium passenger van with exceptional comfort</p>
+                        <ul class="vehicle-features">
+                            <li><i class="fas fa-user-friends"></i> 8 Passengers</li>
+                            <li><i class="fas fa-cog"></i> Automatic</li>
+                            <li><i class="fas fa-star"></i> Premium</li>
+                        </ul>
+                        <button class="btn btn-sm book-car-btn" data-vehicle="viano">Reserve Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- VIP Security Services Section -->
+    <section id="services" class="section-padding vip-security-section">
+        <div class="container">
+            <h2 class="section-title text-gold">VIP Security Services</h2>
+            <p class="section-subtitle text-white">Your safety is our priority. We provide comprehensive security solutions tailored to your specific needs.</p>
+            
+            <div class="security-grid">
+                <!-- Executive Protection -->
+                <div class="security-card">
+                    <div class="icon-box">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Executive Protection</h3>
+                    <p>Highly trained security professionals for personal and corporate protection</p>
+                </div>
+
+                <!-- Secure Transport -->
+                <div class="security-card active-card">
+                    <div class="icon-box">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <h3>Secure Transport</h3>
+                    <p>Armored vehicles with advanced security features for high-risk situations</p>
+                </div>
+
+                <!-- Event Security -->
+                <div class="security-card">
+                    <div class="icon-box">
+                        <i class="fas fa-user-friends"></i>
+                    </div>
+                    <h3>Event Security</h3>
+                    <p>Comprehensive security solutions for private and corporate events</p>
+                </div>
+
+                <!-- 24/7 Availability -->
+                <div class="security-card">
+                    <div class="icon-box">
+                        <i class="far fa-clock"></i>
+                    </div>
+                    <h3>24/7 Availability</h3>
+                    <p>Round-the-clock security services whenever and wherever you need them</p>
+                </div>
+            </div>
+
+            <!-- Specialized Security CTA -->
+            <div class="security-cta-box">
+                <h3>Need Specialized Security?</h3>
+                <p>Contact our security team to discuss your specific requirements and get a customized protection plan.</p>
+                <a href="#booking" class="btn btn-security-cta">Contact Security Team</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section (Replaces Contact) -->
+    <section id="booking" class="section-padding booking-section">
+        <div class="container">
+            <div class="booking-card">
+                <h2 class="booking-title">Book Your <span class="text-primary">Luxury Experience</span></h2>
+                <p class="booking-subtitle">Fill out the form below and we'll get back to you within 24 hours</p>
+                
+                <form class="main-booking-form" onsubmit="event.preventDefault(); alert('Booking request submitted! We will contact you shortly.');">
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="full-name">Full Name *</label>
+                            <input type="text" id="full-name" placeholder="John Doe" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" placeholder="john@example.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" placeholder="+1 234 567 8900" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="service-date">Service Date *</label>
+                            <div class="custom-date-input">
+                                <i class="far fa-calendar-alt"></i>
+                                <input type="text" id="service-date" placeholder="Pick a date" readonly required>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group full-width">
+                        <label for="vehicle-select-main">Select Vehicle *</label>
+                        <select id="vehicle-select-main" required>
+                            <option value="" disabled selected>Choose a vehicle</option>
+                            <option value="coaster">Coaster Bus</option>
+                            <option value="escalade">Escalade ESV 600</option>
+                            <option value="g-wagon-old">G-Wagon (2016-2020)</option>
+                            <option value="g63">G63 AMG (2021)</option>
+                            <option value="hilux-2015">Hilux (2015)</option>
+                            <option value="hilux-2021">Hilux (2021)</option>
+                            <option value="gx460">Lexus GX460</option>
+                            <option value="lx570">Lexus LX 570</option>
+                            <option value="range-rover">Range Rover Vogue</option>
+                            <option value="sprinter">Sprinter Bus</option>
+                            <option value="prado">Toyota Land Cruiser Prado</option>
+                            <option value="viano">Viano Van (2020)</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label for="service-type">Service Type / Location *</label>
+                        <select id="service-type" required>
+                            <option value="" disabled selected>Choose service type</option>
+                            <option value="12hrs-lagos">12hrs within Lagos</option>
+                            <option value="24hrs-lagos">24hrs within Lagos</option>
+                            <option value="airport">Airport pickup and drop off</option>
+                            <option value="ijebu-sagamu">Ijebu, Sagamu</option>
+                            <option value="ibadan">Ibadan</option>
+                            <option value="osun">Osun</option>
+                            <option value="kwara">Kwara</option>
+                            <option value="akure">Akure</option>
+                            <option value="ekiti">Ekiti</option>
+                            <option value="abeokuta">Abeokuta</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" class="btn btn-submit-booking">Submit Booking Request</button>
+                    <p class="form-footer">By submitting this form, you agree to our terms and conditions</p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/1234567890" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i> Chat with us
+    </a>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <!-- Left Column: Logo & Tagline -->
+            <div class="footer-brand">
+                <div class="hero-logo-box footer-logo-box">
+                    <img src="images/sniperautos.png" alt="Sniper Autos Logo" class="logo-img">
+                </div>
+                <p class="footer-tagline">Making your trip better with premium luxury vehicles and uncompromising security services.</p>
+                <div class="footer-socials">
+                    <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://wa.me/1233456890" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+
+            <!-- Middle Column: Quick Links -->
+            <div class="footer-column">
+                <h3 class="footer-heading">Quick Links</h3>
+                <ul class="footer-links-list">
+                    <li><a href="#fleet">Our Fleet</a></li>
+                    <li><a href="#booking">Book Now</a></li>
+                    <li><a href="#services">VIP Security</a></li>
+                    <li><a href="#home">About Us</a></li>
+                </ul>
+            </div>
+
+            <!-- Right Column: Contact Us -->
+            <div class="footer-column">
+                <h3 class="footer-heading">Contact Us</h3>
+                <ul class="footer-contact-list">
+                    <li><i class="fas fa-phone-alt"></i> 1233456890</li>
+                    <li><a href="https://wa.me/1233456890" target="_blank" style="display: flex; align-items: center; gap: 15px; color: var(--primary-color);"><i class="fab fa-whatsapp" style="width: 20px; text-align: center;"></i> WhatsApp Us</a></li>
+                    <li><i class="far fa-envelope"></i> info@sniperautos.com</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Lagos, Nigeria</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Sniper Autos. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Custom Notification -->
+    <div id="custom-notification" class="notification-container">
+        <div class="notification-content">
+            <div class="notification-icon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <div class="notification-text">
+                <h4>Success!</h4>
+                <p>Booking request submitted! We will contact you shortly.</p>
+            </div>
+            <button class="notification-close" onclick="closeNotification()">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Flatpickr JS -->
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="script.js"></script>
+</body>
+</html>
