@@ -908,8 +908,19 @@ footer {
     }
     
     .booking-card {
-        padding: 25px;
-        margin: 0; /* Remove side margins to prevent overflow */
+        padding: 30px 20px;
+        margin: 0; 
+        width: 100%;
+    }
+
+    .fleet-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .vehicle-card {
+        width: 100%;
+        max-width: 100%;
     }
 
     .footer-content {
