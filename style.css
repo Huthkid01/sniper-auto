@@ -907,7 +907,7 @@ footer {
     
     .booking-card {
         padding: 25px;
-        margin: 0 15px;
+        margin: 0; /* Remove side margins to prevent overflow */
     }
 
     .footer-content {
