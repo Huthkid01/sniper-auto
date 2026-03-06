@@ -963,7 +963,8 @@ footer {
         height: 60px;
         border-radius: 50%;
         justify-content: center;
-        bottom: 20px;
+        bottom: 20px; /* Fallback */
+        bottom: calc(20px + env(safe-area-inset-bottom)); /* Adjust for iPhone home bar */
         right: 20px;
         font-size: 0; /* Fallback to hide text if span is missing */
     }
