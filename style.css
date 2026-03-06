@@ -965,10 +965,16 @@ footer {
         justify-content: center;
         bottom: 20px;
         right: 20px;
+        font-size: 0; /* Fallback to hide text if span is missing */
     }
     
     .whatsapp-float i {
         font-size: 2rem;
         margin: 0;
+    }
+
+    /* Add space at bottom of footer for floating button */
+    footer {
+        padding-bottom: 100px;
     }
 }
